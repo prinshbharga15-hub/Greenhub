@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: greenhub
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: DB_NAME
+        value: greenhub
+      - key: BRIDGE_API_KEY
+        generateValue: true

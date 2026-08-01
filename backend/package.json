@@ -1,0 +1,15 @@
+{
+  "name": "greenhub-backend-bridge",
+  "version": "1.0.0",
+  "description": "MongoDB bridge for PHP REST API in GreenHub",
+  "main": "db_bridge.js",
+  "type": "module",
+  "scripts": {
+    "start": "node db_bridge.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "dotenv": "^16.4.5"
+  }
+}
